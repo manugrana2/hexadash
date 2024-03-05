@@ -36,3 +36,47 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+
+
+# Instructions for the test
+
+
+Svelte/SvelteKit + PostgreSQL Development Setup
+This guide outlines the steps to set up a development environment for a Svelte/SvelteKit application with PostgreSQL integration using docker-compose. This setup provides a local environment with sample data for testing purposes.
+
+#### Prerequisites:
+
+* Git: If you don't have Git installed, follow the instructions at https://git-scm.com/downloads.
+
+* Docker: Install Docker Desktop from https://docs.docker.com/guides/walkthroughs/run-a-container/.
+
+
+## This project include docker-compose so you can start and the Svelte/SvelteKit + PostgreSQL
+
+#### 1. Clone this repository
+
+> git clone git@github.com:manugrana2/hexadash.git
+
+#### 2. Run docker compose 
+
+This is start both a postgres database with sample data from ./data-sample.sql and the stelve service. 
+
+> docker-compose up --build
+
+### 3. Go to UI and API routes that uses the db connection localted at ./src/utils/db.js
+
+API http://localhost:5000/api/employees
+UI http://localhost:5000/pages/employees (You need to be logged in to see this route)
+
+
+
+
+## Screenshots 
+
+### UI 
+![Screenshot](./static/img/sreenshoots/1.jpg "Second screenshot")
+
+### API 
+
+![Screenshot](./static/img/sreenshoots/2.jpg "Second screenshot")

@@ -16,7 +16,7 @@
 			goto(`/signin`);
 		} 
 		(async () => {
-		const response = await fetch('/api/employee');
+		const response = await fetch('/api/employees');
 		if (response.ok) {
 			employees = await response.json();
 		} else {
