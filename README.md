@@ -66,8 +66,9 @@ This is start both a postgres database with sample data from ./data-sample.sql a
 
 ### 3. Go to UI and API routes that uses the db connection localted at ./src/utils/db.js
 
-API http://localhost:5000/api/employees
-UI http://localhost:5000/pages/employees (You need to be logged in to see this route)
+* API http://localhost:5000/api/employees
+
+* UI http://localhost:5000/pages/employees (You need to be logged in to see this route)
 
 
 
