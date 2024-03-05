@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  hexadash:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://hexadash:password@db:5432/hexadashdb
+
+  db:
+    image: postgres:16
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: hexadash
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: hexadashdb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
