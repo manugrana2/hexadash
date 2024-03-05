@@ -80,3 +80,10 @@ UI http://localhost:5000/pages/employees (You need to be logged in to see this r
 ### API 
 
 ![Screenshot](./static/img/sreenshoots/2.jpg "Second screenshot")
+
+
+# Starting this project Svelte/SvelteKit + A local PostgreSQL
+
+1. Run content of ./data-sample.sql in your local database
+
+2. Provide the database connection details in the enviroment variables as shown in .env.example 
